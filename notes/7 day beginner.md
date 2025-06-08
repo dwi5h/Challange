@@ -17,8 +17,8 @@ Build strong fundamentals before diving into medium/hard problems.
 
 - [x] Learn basics of hash maps / dictionaries
 - [x] Solve: [LC 1. Two Sum](https://leetcode.com/problems/two-sum/)
-- [ ] Solve: [LC 387. First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/)
-- [ ] Solve: HackerRank - [Sparse Arrays](https://www.hackerrank.com/challenges/sparse-arrays)
+- [x] Solve: [LC 387. First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/)
+- [x] Solve: HackerRank - [Sparse Arrays](https://www.hackerrank.com/challenges/sparse-arrays)
 
 ---
 
