@@ -30,3 +30,5 @@ class Solution {
         return min;
     }
 }
+
+// https://leetcode.com/problems/first-unique-character-in-a-string
