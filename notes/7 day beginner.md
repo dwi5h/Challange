@@ -24,8 +24,8 @@ Build strong fundamentals before diving into medium/hard problems.
 
 ## ✅ Day 3: Strings & Sliding Window
 
-- [ ] Learn the sliding window pattern
-- [ ] Solve: [LC 3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
+- [x] Learn the [sliding window pattern](https://www.geeksforgeeks.org/window-sliding-technique/)
+- [x] Solve: [LC 3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
 - [ ] Solve: [LC 567. Permutation in String](https://leetcode.com/problems/permutation-in-string/)
 - [ ] Solve: HackerRank - [Anagram](https://www.hackerrank.com/challenges/anagram)
 
