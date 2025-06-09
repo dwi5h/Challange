@@ -4,40 +4,33 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class SolutionTemplate {
-    public boolean checkInclusion(String s1, String s2) {
-        Map<Character, Integer> s1Map = new HashMap();
-        Map<Character, Integer> window = new HashMap();
+    public static int anagram(String s) {
+        if(s.length() % 2 > 0) {
+            return -1;
+        }
 
+        Map<Character, Integer> s1Map = new HashMap<>();
+        Map<Character, Integer> s2Map = new HashMap<>();
+
+        int mid = s.length() / 2;
+        String s1 = s.substring(0, mid);
+        String s2 = s.substring(mid, s.length());
+
+        for(char c : s2.toCharArray()) {
+            s2Map.put(c, s2Map.getOrDefault(c, 0) + 1);
+        }
+
+        int anagram = 0;
         for(char c : s1.toCharArray()) {
             s1Map.put(c, s1Map.getOrDefault(c, 0) + 1);
-        }
-
-        int k = s1.length();
-        
-        for(int i = 0; i < k; i++) {
-            char c = s2.charAt(i);
-            window.put(c, window.getOrDefault(c, 0) + 1);
-        }
-        
-        int left = 0;
-        for(int i = k; i < s2.length(); i++) {
-            if(s1Map.equals(window)) {
-                return true;
+            if(s2Map.containsKey(c) && s1Map.get(c) > s2Map.get(c)) {
+                anagram++;
             }
-
-            char rightChar = s2.charAt(i);
-            char leftChar = s2.charAt(left++);
-            window.put(rightChar, window.getOrDefault(rightChar, 0) + 1);
-            window.put(leftChar, window.get(leftChar) - 1);
-            if(window.getOrDefault(leftChar, 0) == 0) {
-                window.remove(leftChar);
+            else if(!s2Map.containsKey(c)) {
+                anagram++;
             }
         }
 
-        if(s1Map.equals(window)) {
-            return true;
-        }
-
-        return false;
+        return anagram;
     }
 }
