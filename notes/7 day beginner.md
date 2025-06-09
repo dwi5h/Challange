@@ -33,7 +33,7 @@ Build strong fundamentals before diving into medium/hard problems.
 
 ## ✅ Day 4: Recursion Basics
 
-- [ ] Understand base case and recursive case
+- [ ] Understand [base case](https://www.geeksforgeeks.org/what-is-base-case-in-recursion/) and [recursive case](https://www.geeksforgeeks.org/recursive-functions/)
 - [ ] Solve: [LC 509. Fibonacci Number](https://leetcode.com/problems/fibonacci-number/)
 - [ ] Solve: [LC 104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
 - [ ] Solve: HackerRank - [Recursive Digit Sum](https://www.hackerrank.com/challenges/recursive-digit-sum)
